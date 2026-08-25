@@ -8,7 +8,7 @@ public class BS_SmallestLetterGreatherThanTarget {
         while(start<=end){
             int mid = start +(end-start)/2;
             if(arr[mid] == target){
-                return arr[mid];
+                return arr[mid+1];
             }else if (arr[mid]<target) {
                 start =  mid+1;
             }else{
@@ -21,7 +21,7 @@ public class BS_SmallestLetterGreatherThanTarget {
     public static void main(String[] args) {
         //Ceiling=Smallest Number Greater than Target
         char arr[] = {'c','e','g'};
-        char target = 'a';
+        char target = 'c';
         System.out.println("The ceiling of the number is: " + ceilCharUsingBS(arr, target));
     }
 }
